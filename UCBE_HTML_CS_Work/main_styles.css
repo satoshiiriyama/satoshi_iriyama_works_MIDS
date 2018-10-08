@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(248, 246, 246);
+}
+
+
+.navbar{
+  background-color: #ffffff;
+  border: 0px
+}
+
+@media (max-width: 767px) {
+  .navbar{
+    background-color: rgb(21, 207, 192);
+    border: 0px
+  }
+  .nav.navbar-nav.navbar-right{
+    background-color: white;
+    color : black;
+  }
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+
+.navbar-inverse .navbar-toggle {
+  border-color: white;
+  background-color: rgb(21, 207, 192);
+  color: white;
+}
+
+
+.navbar-brand {
+  position: absolute;
+  left: 5%;
+  height: 50px;
+  background-color: rgb(21, 207, 192);
+  font-family: times;
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+}
+
+
+h1 {
+  font-family: times;
+  font-weight: 900;
+  color: rgb(21, 207, 192);
+  font-size: 35px;
+}
+
+h2 {
+  font-family: times;
+  font-weight: 900;
+  color: rgb(21, 207, 192);
+  font-size: 25px;
+}
+
+.leftbox {
+  padding: 20px;
+  margin-top: 15px;
+  margin-right: 0px;
+  background-color: #ffffff;
+}
+
+.rightbox {
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+
+
+#mainfigure {
+  position: relative;
+  width: 250px;
+  height: auto;
+  margin-right: 30px;
+}
+
+#mainfigure,
+#maintext {
+  float: left;
+}
+
+p {
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.541);
+  line-height: 30px;
+}

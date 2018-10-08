@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission Mars Homework</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron text-center">
+          <h1>Missions to Mars</h1>
+          <button type="button" class="btn btn-primary">Scrape New Data</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Latest Mars News</h2>
+        <h3>{{ dict.news_title }}</h3>
+        <p>{{ dict.news_p }}</p>
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Featured Mars Image</h2>
+        <img class = "img-responsive"  src= "{{ dict.featured_image }}"  alt= "Featured Image">
+      </div>
+        
+      <div class="col-md-4">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>Current Weather on Mars</h3>
+            <p class='weather'>{{ dict.mars_weather }}</p>
+          </div>
+        </div>
+        <br>
+        <h3>Mars Facts</h3>
+        {{ dict.mars_fact_html |safe}}
+      </div>  
+    </div>
+    
+
+    <br>
+
+    <div class="row">
+      <div class="col-md-6col-md-12">
+        <h2 class= "text-center">Mars Hemispheres</h2>
+        <hr>
+      </div>
+
+    </div>  
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <a href="{{ dict.hemispheres[0].img_url}}">
+              <img id = "image1" class = "img-responsive" src="{{ dict.hemispheres[0].jpg_img_url }}" alt="fig1">
+            </a>
+          <h3>{{ dict.hemispheres[0].title}}</h3>
+        </div>
+      </div>
+    </div>
+      
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <a href="{{ dict.hemispheres[1].img_url}}">
+              <img id = "image2" class = "img-responsive" src="{{ dict.hemispheres[1].jpg_img_url }}" alt="fig1">
+            </a>
+            <h3>{{ dict.hemispheres[1].title}}</h3>
+          </div>
+        </div>
+      </div>
+    
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <a href="{{ dict.hemispheres[2].img_url}}">
+              <img id = "image2" class = "img-responsive" src="{{ dict.hemispheres[2].jpg_img_url }}" alt="fig1">
+            </a>
+            <h3>{{ dict.hemispheres[2].title}}</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <a href="{{ dict.hemispheres[3].img_url}}">
+              <img id = "image2" class = "img-responsive" src="{{ dict.hemispheres[3].jpg_img_url }}" alt="fig1">
+            </a>
+            <h3>{{ dict.hemispheres[3].title}}</h3>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</body>
+
+</html>

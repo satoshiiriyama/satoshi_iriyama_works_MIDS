@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Comparison</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="comparison_styles.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="main.html" class="navbar-brand">Latitude</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="visualization_max_temperature.html">Max Temperature</a></li>
+              <li><a href="visualization_max_humidity.html">Huidity</a></li>
+              <li><a href="visualization_max_cloudiness.html">Cloudiness</a></li>
+              <li><a href="visualization_max_wind_speed.html">Wind Speed</a></li>
+          </ul>
+        </li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="data.html">Data</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+     
+
+    <div class="mainbox">
+      <h1>Comparison: Latitude vs. X</h1>
+      <hr>
+      <p>Check any plot to get an in-depth analysis.</p>
+      <div class = "row">
+        <div class="col-md-6">
+          <h2>vs. Max Temperature</h2>
+          <a href="visualization_max_temperature.html"><img id = "mainfigure" class = "img-responsive" src="Resources/Fig1.png" alt="fig1"></a>
+        </div>
+        <div class="col-md-6">
+          <h2>vs. Humidity</h2>
+          <a href="visualization_max_humidity.html"><img id = "mainfigure" class = "img-responsive" src="Resources/Fig2.png" alt="fig2"></a>
+        </div>
+        <div class="col-md-6">
+          <h2>vs. Cloudiness</h2>
+          <a href="visualization_max_cloudiness.html"><img id = "mainfigure" class = "img-responsive" src="Resources/Fig3.png" alt="fig3"></a>
+        </div>
+        <div class="col-md-6">
+          <h2>vs. Wind Speed</h2>
+          <a href="visualization_max_wind_speed.html"><img id = "mainfigure" class = "img-responsive" src="Resources/Fig4.png" alt="fig4"></a>
+        </div>
+      </div> 
+    </div> 
+ 
+    
+</body>
+
+</html>
